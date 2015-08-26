@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <meta charset="utf-8">
-    <title>AngularProject1-index</title>
+    <title>AngularProject1-add</title>
   </head>
 
   <body ng-app="MusicApp">
@@ -21,36 +21,28 @@
         </div><!--end nav column-->
       </div><!--end nav row-->
     
-      <div class="row row-eq-height" ng-controller="SongCtrl">
+      <div class="row row-eq-height">
         <div class="col-md-3 filterStyle">
-          <select
-            ng-model="theSong"
-            ng-options="value.artist for value in songs|unique: 'artist'">
-            <option>--</option>
-          </select>
-          <select
-            ng-model="theSong"
-            ng-options="value.name|capitalize group by value.album for value in songs">Album
-            <option>--</option>
-          </select>
-        </div><!--end filter column-->
+          <div>
+            <button class="filterButton">Artist</button>
+            <button class="filterButton">Album</button>
+          </div><!--end FilterCtrl controller-->
+        </div><!--end FilterCtrl column-->
 
         <div class="col-md-9 listStyle">
-          <div class="songList" ng-repeat="song in songs">
-            <h1>{{song.name|capitalize}}</h1>
-            <div>Performed by {{song.artist}} on the album {{song.album|capitalize}}.</div> 
-            <button ng-click="killSong(song)">Delete song</button>
-          </div>
-        </div><!--end list column-->
+          <div>
+            <div class="addSongs">
+              Add Songs here.
+            </div>
+          </div><!--end controller-->
+        </div><!--end column-->
       </div><!--end row-->
 
     </div><!--end container-->
 
     <script src="lib/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="lib/bower_components/angular/angular.min.js"></script>
-    <script src="lib/bower_components/angular-filter/dist/angular-filter.min.js"></script>
     <script src="app/app.js"></script>
-    <script src="app/filters/capitalize.js"></script>
     <script src="app/controllers/song.js"></script>
   </body>
 </html>

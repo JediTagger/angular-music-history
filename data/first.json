@@ -1,14 +1,14 @@
 {
   "songs": [
     {
-      "name": "Legs",
+      "name": "legs",
       "artist": "ZZ Top",
-      "album": "Eliminator"
+      "album": "eliminator"
     },
     {
-      "name": "The Logical Song",
+      "name": "the Logical Song",
       "artist": "Supertramp",
-      "album": "Breakfast in America"
+      "album": "breakfast in America"
     },
     {
       "name": "Another Brick in the Wall",

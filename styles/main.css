@@ -1,7 +1,27 @@
 .navStyle {
-  border: 2px solid black; }
+  border: 2px solid black;
+  background-color: #FFB4B0; }
 
 .navList {
   display: inline; }
+
+.filterStyle {
+  border: 2px solid black;
+  background-color: #4DD7FA; }
+
+.listStyle {
+  padding-bottom: 1em;
+  border: 2px solid black;
+  background-color: #FEFAC0; }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.filterButton {
+  width: 100%;
+  margin: 10px 0 10px 0; }
 
 /*# sourceMappingURL=main.css.map */
