@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <meta charset="utf-8">
+    <title>AngularProject1</title>
+  </head>
+
+  <body ng-app="MusicApp">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 navStyle">
+          <nav class="nav">
+            <ul>
+              <li class="navList"><a href="#">View Music</a></li>
+              <li class="navList"><a href="#">Add Music</a></li>
+            </ul>
+          </nav>
+        </div><!--end nav column-->
+      </div><!--end nav row-->
+    
+
+      <div ng-controller="SongCtrl">
+
+
+      </div>
+    </div><!--end container-->
+
+    <script src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bower_components/angular/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/song.js"></script>
+  </body>
+</html>
