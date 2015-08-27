@@ -1,0 +1,5 @@
+<div ng-repeat="song in songs | filter: theSong.artist | filter: theSong.album">
+  <h1>{{song.name|capitalize}}</h1>
+  <div>Performed by {{song.artist}} on the album {{song.album|capitalize}}.</div>
+  <button ng-click="killSong(song)">Delete song</button>
+</div>    

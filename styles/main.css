@@ -1,15 +1,14 @@
 .navStyle {
   border: 2px solid black;
-  background-color: #FFB4B0; }
+  background-color: #FFB4B0;
+  padding: 10px; }
 
-.navList {
-  display: inline; }
-
-.filterStyle {
+.sideStyle {
   border: 2px solid black;
-  background-color: #4DD7FA; }
+  background-color: #4DD7FA;
+  text-align: center; }
 
-.listStyle {
+.mainStyle {
   padding-bottom: 1em;
   border: 2px solid black;
   background-color: #FEFAC0; }
